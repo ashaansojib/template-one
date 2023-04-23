@@ -1,0 +1,30 @@
+[
+    {
+      "id": "6444c6270d225bd76f89f8b4",
+      "image": "https://dtguru.wpenginepowered.com/wp-content/uploads/2014/05/team1.jpg",
+      "title": "Mickey Rorey",
+      "position": "Founder",
+      "picture": "http://placehold.it/32x32"
+    },
+    {
+      "id": "6444c6271ec033d91ce530c1",
+      "image": "https://dtguru.wpenginepowered.com/wp-content/uploads/2014/05/team2.jpg",
+      "title": "Damie Glendell",
+      "position": "Co-Director",
+      "picture": "http://placehold.it/32x32"
+    },
+    {
+      "id": "6444c62781607046a577f986",
+      "image": "https://dtguru.wpenginepowered.com/wp-content/uploads/2014/05/team3.jpg",
+      "title": "Jenny Sheen",
+      "position": "Marketing Director",
+      "picture": "http://placehold.it/32x32"
+    },
+    {
+      "id": "6444c6277ce607729b673905",
+      "image": "https://dtguru.wpenginepowered.com/wp-content/uploads/2014/05/team4.jpg",
+      "title": "James Catwin",
+      "position": "Art Director",
+      "picture": "http://placehold.it/32x32"
+    }
+  ]

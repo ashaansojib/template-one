@@ -1,0 +1,16 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-container {
+    @apply lg:w-[1140px] mx-auto;
+}
+.default{
+    @apply py-2 px-4 text-[#848A87] font-medium;
+}
+.active{
+    @apply bg-[#D95B43] py-2 px-4 text-white rounded-lg font-medium;
+}

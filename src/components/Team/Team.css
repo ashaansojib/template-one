@@ -1,0 +1,12 @@
+.TeamCard{
+    @apply transition transform duration-300 hover:-translate-y-2;
+}
+.TeamCard:hover h2{
+    @apply text-orange-400
+}
+.TeamCard:hover .card-social{
+    @apply opacity-70 rounded-t-md
+}
+.card-social {
+    @apply transition duration-300 absolute top-0 bg-sky-600 w-full h-full opacity-0 flex justify-center items-center space-x-4;
+}

@@ -1,0 +1,9 @@
+.catIcon{
+    @apply w-14 h-14 p-4 text-[#355c7d] bg-white rounded-full;
+}
+.category-cart:hover span{
+    @apply rotate-180 transition duration-300
+}
+.category-cart{
+    @apply p-4 text-center space-y-4;
+}

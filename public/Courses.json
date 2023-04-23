@@ -1,0 +1,34 @@
+[
+    {
+      "id": "6444e6c1625de81a91150f28",
+      "image": "https://dtguru.wpenginepowered.com/wp-content/uploads/2014/05/course8-420x250.jpg",
+      "title": "Become a Dentist",
+      "price": "Free",
+      "lession": "2 Lessons",
+      "tag": "Hospitality"
+    },
+    {
+      "id": "6444e6c1ccb9c87627a99c5c",
+      "image": "https://dtguru.wpenginepowered.com/wp-content/uploads/2014/05/course7-420x250.jpg",
+      "title": "Fitness Sport Training Gym",
+      "price": "$50.00",
+      "lession": "3 Lessons",
+      "tag": "Food"
+    },
+    {
+      "id": "6444e6c1e6b3a14a06e4925e",
+      "image": "https://dtguru.wpenginepowered.com/wp-content/uploads/2014/05/course6-420x250.jpg",
+      "title": "Beauty Spa & Fitness Training",
+      "price": "$15.00",
+      "lession": "2 Lessons",
+      "tag": "Beauty Spa"
+    },
+    {
+      "id": "6444e6c1400858df2d01a805",
+      "image": "https://dtguru.wpenginepowered.com/wp-content/uploads/2014/05/course10-420x250.jpg",
+      "title": "Marketing Management",
+      "price": "Free",
+      "lession": "3 Lessons",
+      "tag": "Marketing"
+    }
+  ]

@@ -1,0 +1,5 @@
+.cartAnimate:hover img{
+    @apply rotate-12 transition-all
+}.cartAnimate:hover h2{
+    @apply text-orange-400
+}

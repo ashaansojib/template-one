@@ -1,0 +1,3 @@
+.footer-links{
+    @apply border-r px-2 hover:text-orange-500 transition duration-500 last:border-none;
+}
