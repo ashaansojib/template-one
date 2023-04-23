@@ -5,6 +5,7 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './components/Home/Home.jsx'
 import CheckList from './components/CheckLisk/CheckList.jsx'
+import Register from './components/Register/Register.jsx'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         element: <CheckList></CheckList>
       }
     ]
+  },
+  {
+    path: '/register',
+    element: <Register></Register>
   }
 ])
 

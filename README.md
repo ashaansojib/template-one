@@ -6,6 +6,7 @@
 5. Using Flowbite for forms
 6. Installed react-icon and use bootstrap 5
 7. Install react marquee
+8. change form and install daisyUI
 
 ### Components List
 1. Home

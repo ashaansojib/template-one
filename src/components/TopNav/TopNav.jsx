@@ -9,7 +9,7 @@ const TopNav = () => {
                     <p>Create Your Own Coustom Resourch. <Link className='underline'>Learn How?</Link></p>
                 </div>
                 <div>
-                    <Link>Login / Register</Link>
+                    <Link to="/register">Login / Register</Link>
                 </div>
             </div>
         </nav>
