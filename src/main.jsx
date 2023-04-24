@@ -6,6 +6,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './components/Home/Home.jsx'
 import CheckList from './components/CheckLisk/CheckList.jsx'
 import Register from './components/Register/Register.jsx'
+import Login from './components/Register/Login/Login.jsx'
+import Auth from './providers/Auth.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,7 +17,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: ()=> fetch('/Services.json')
+        loader: () => fetch('/Services.json')
       },
       {
         path: '/checklist',
@@ -26,7 +28,15 @@ const router = createBrowserRouter([
   {
     path: '/register',
     element: <Register></Register>
+  },
+  {
+    path: '/login',
+    element: <Login></Login>
   }
 ])
 
-ReactDOM.createRoot(document.getElementById('root')).render( <RouterProvider router={router}></RouterProvider>)
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <Auth>
+    <RouterProvider router={router} />
+  </Auth>
+)
