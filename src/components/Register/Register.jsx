@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../../providers/Auth';
+import { AuthContext } from '../../providers/AuthProviders';
+
 
 const Register = () => {
 
@@ -12,7 +13,9 @@ const Register = () => {
         console.log(email, password)
     }
     
-    console.log(user)
+    const {user} = useContext(AuthContext);
+    
+    
     return (
         <div className='lg:w-[450px] mx-auto py-10'>
             <form onSubmit={handleSubmit} className="card-body shadow-xl pt-3 bg-[#FFFFFF]">
@@ -27,10 +30,10 @@ const Register = () => {
                         <span className="label-text">Password</span>
                     </label>
                     <input type="password" name='password' placeholder="password" className="input input-bordered" />
-                    <label className="label">
-                        <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                    </label>
                 </div>
+                {
+                    user && <h2>{user.displayName}</h2>
+                }
                 <div className="form-control mt-6">
                     <button className="btn btn-primary">Register</button>
                 </div>
