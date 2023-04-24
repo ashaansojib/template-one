@@ -11,7 +11,7 @@ const Register = () => {
         const password = form.password.value;
         console.log(email, password)
     }
-    const {user} = useContext(AuthContext);
+    
     console.log(user)
     return (
         <div className='lg:w-[450px] mx-auto py-10'>
