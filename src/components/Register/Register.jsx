@@ -1,21 +1,31 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProviders';
 
 
 const Register = () => {
+    const { createUser } = useContext(AuthContext)
 
-    const handleSubmit = (e) =>{
+    const [error, setError] = useState('');
+    const [success, setSuccess] = useState('');
+    
+    const handleSubmit = (e) => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password)
+
+        createUser(email, password)
+            .then(result => {
+                const createUser = result.user;
+                setSuccess('User Created Succefuly!!')
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    form.reset();
     }
-    
-    const {user} = useContext(AuthContext);
-    
-    
+
     return (
         <div className='lg:w-[450px] mx-auto py-10'>
             <form onSubmit={handleSubmit} className="card-body shadow-xl pt-3 bg-[#FFFFFF]">
@@ -31,9 +41,9 @@ const Register = () => {
                     </label>
                     <input type="password" name='password' placeholder="password" className="input input-bordered" />
                 </div>
-                {
-                    user && <h2>{user.displayName}</h2>
-                }
+                <label className="label">
+                    <span className="label-text">{error ? error : success}</span>
+                </label>
                 <div className="form-control mt-6">
                     <button className="btn btn-primary">Register</button>
                 </div>

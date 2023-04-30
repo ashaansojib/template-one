@@ -8,6 +8,7 @@ import CheckList from './components/CheckLisk/CheckList.jsx'
 import Register from './components/Register/Register.jsx'
 import Login from './components/Login/Login.jsx'
 import AuthProviders from './providers/AuthProviders.jsx'
+import PrivetRoute from './privetRoute/PrivetRoute.jsx'
 
 
 const router = createBrowserRouter([
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/checklist',
-        element: <CheckList></CheckList>
+        element: <PrivetRoute><CheckList></CheckList></PrivetRoute>
       }
     ]
   },
