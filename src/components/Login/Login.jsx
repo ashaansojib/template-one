@@ -7,7 +7,11 @@ import { useState } from 'react';
 const Login = () => {
     const { userLogin, user } = useContext(AuthContext);
     const [error, setError] = useState("");
-    
+
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
+    const navigate  = useNavigate();
+
     const handleLogin = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -17,6 +21,7 @@ const Login = () => {
         userLogin(email, password)
             .then(result => {
                 const loggedUser = result.user;
+                navigate(from, {replace: true})
                 setError("");
             })
             .catch(error => {

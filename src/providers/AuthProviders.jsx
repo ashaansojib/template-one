@@ -16,17 +16,19 @@ const AuthProviders = ({children}) => {
 
     // create new user
     const createUser = (email, password) =>{
+        setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
     // login existing user
     const userLogin = (email, password) =>{
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
     // manage loggin user state
     useEffect( ()=>{
         const unsubscribe = onAuthStateChanged( auth, currentUser =>{
-            setUser(currentUser)
-            setLoading(false)
+            setUser(currentUser);
+            setLoading(false);
         });
         return()=>{
             unsubscribe();

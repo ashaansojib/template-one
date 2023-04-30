@@ -19,7 +19,7 @@ const TopNav = () => {
                 </div>
                 <div>
                     {
-                        user ? <>{user.email} <button onClick={handleLogOut}>Log Out</button></> : <Link to="/register">Login / Register</Link>
+                        user ? <>{user.email} <button onClick={handleLogOut}>Log Out</button></> : <Link to="/login">Login / Register</Link>
                     }
                 </div>
             </div>
